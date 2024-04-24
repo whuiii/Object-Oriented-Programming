@@ -1,0 +1,14 @@
+.imageRadius {
+    -fx-background-radius: 10px;
+}
+.topNavItem{
+    -fx-background-color: #ffffff;
+}
+
+.topNavItem:hover{
+
+     -fx-background-color: #CAC9D5;
+     -fx-border-width: 0px 0px 3px 0px;
+
+}
+

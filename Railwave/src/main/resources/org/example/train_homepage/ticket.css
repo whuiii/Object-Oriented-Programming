@@ -1,0 +1,24 @@
+#ticketLine {
+    -fx-stroke: black; /* Color of the line */
+    -fx-stroke-width: 3; /* Width of the line */
+    -fx-stroke-dash-array: 8 12; /* Dash pattern (5 pixels on, 5 pixels off) */
+}
+
+#paneDetail {
+    -fx-background-color: #e5e5e5;
+    -fx-background-radius: 10 0 0 10;
+    -fx-border-radius: 10 0 0 10;
+    /*-fx-border-color: black;*/
+}
+
+#panePrice {
+    -fx-background-color: #D3B5F1;
+    -fx-background-radius: 0 10 10 0;
+    -fx-border-radius: 0 10 10 0;
+    /*-fx-border-color: black;*/
+}
+
+#btnDeleteBooking{
+    -fx-background-color: #D3B5F1;
+    -fx-background-radius: 5;
+}
