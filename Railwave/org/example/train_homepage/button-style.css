@@ -1,0 +1,31 @@
+.button{
+    -fx-background-color: #FFE075;
+    -fx-pref-width: 35;
+    -fx-pref-height: 30;
+}
+
+#btnForward, #btnBackward{
+    -fx-background-insets: -5;
+    -fx-background-color: transparent;
+}
+
+#btnPaymentProcess{
+    -fx-background-color: #8635D7;
+    -fx-pref-width: 125;
+    -fx-pref-height: 35;
+}
+
+.button.occupied{
+    -fx-background-color: #F15E5A; /* red color when occupied*/
+    -fx-text-fill: #e5e5e5;
+}
+
+.button.selected{
+    -fx-background-color: #B0E5A5; /* green color when current selected*/
+    -fx-text-fill: black;
+}
+
+.button.empty{
+    -fx-background-color: #FFE075; /* yellow color when empty*/
+    -fx-text-fill: black;
+}

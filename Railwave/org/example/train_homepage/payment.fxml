@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.train_homepage.PaymentController">
+   <children>
+      <VBox layoutX="14.0" layoutY="20.0" prefHeight="510.0" prefWidth="463.0" style="-fx-background-radius: 10;">
+         <children>
+            <Pane prefHeight="513.0" prefWidth="463.0" style="-fx-background-color: #e5e5e5; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="64.0" layoutY="14.0" text="Payment Details" textFill="#767373">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnPay" layoutX="312.0" layoutY="449.0" mnemonicParsing="false" onAction="#onClickButtonPay" prefHeight="36.0" prefWidth="126.0" style="-fx-background-color: #8635D7; -fx-background-radius: 5;" text="Pay" textFill="#f2efef">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnCancel" layoutX="24.0" layoutY="449.0" mnemonicParsing="false" onAction="#onClickButtonBack" prefHeight="36.0" prefWidth="126.0" style="-fx-background-color: #f4f1f1; -fx-background-radius: 5;" text="Cancel" textFill="#404040">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Line endX="241.4000244140625" endY="7.62939453125E-6" fill="#f4f1f1" layoutX="195.0" layoutY="52.0" startX="-153.8000030517578" startY="7.62939453125E-6" stroke="#f4f1f1" strokeWidth="3.0" />
+                  <Button fx:id="btnBack" layoutX="5.0" layoutY="4.0" mnemonicParsing="false" onAction="#onClickButtonBack" prefHeight="36.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/previous.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="22.0" fitWidth="15.0" layoutX="224.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/icons8-lock-48.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="27.0" layoutY="81.0" text="Card Type *">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="355.0" layoutY="64.0" text="* Required field" />
+                  <Label layoutX="24.0" layoutY="163.0" text="Card Number *">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="229.0" text="Expiration Month *">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCardNum" layoutX="149.0" layoutY="159.0" style="-fx-background-color: #f5f5f5;" />
+                  <ComboBox fx:id="cmbMonth" layoutX="148.0" layoutY="226.0" prefHeight="25.0" prefWidth="100.0" promptText="Month" visibleRowCount="12" />
+                  <Label layoutX="22.0" layoutY="293.0" text="Expiration Year *">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cmbYear" layoutX="148.0" layoutY="290.0" prefHeight="25.0" prefWidth="100.0" promptText="Year" />
+                  <Label layoutX="23.0" layoutY="364.0" text="CVN *">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCVN" layoutX="148.0" layoutY="371.0" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #f5f5f5;" />
+                  <Label fx:id="lblCVNLength" layoutX="149.0" layoutY="344.0" prefHeight="16.0" prefWidth="309.0" text="3 or 4 digit number printed on the back or front of credit card" wrapText="true">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="30.0" fitWidth="49.0" layoutX="239.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/findCVN-icon-Photoroom.png-Photoroom.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblRequireCardNumber" layoutX="24.0" layoutY="184.0" text="Require Card Number *" textFill="#ea1b1b" visible="false" wrapText="true">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblRequireExpMonth" layoutX="24.0" layoutY="248.0" text="Require Exp Month *" textFill="#ea1b1b" visible="false" wrapText="true">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblRequireExpYear" layoutX="23.0" layoutY="315.0" text="Requrie Exp Year *" textFill="#ea1b1b" visible="false" wrapText="true">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblRequireCVN" layoutX="24.0" layoutY="388.0" text="Require CVN *" textFill="#ea1b1b" visible="false" wrapText="true">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblRequireCardType" layoutX="28.0" layoutY="100.0" prefHeight="17.0" prefWidth="100.0" text="Requrie Card Type *" textFill="#ea1b1b" visible="false" wrapText="true">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="148.0" layoutY="105.0" prefHeight="25.0" prefWidth="265.0">
+                     <children>
+                        <HBox prefHeight="0.0" prefWidth="44.0" spacing="50.0">
+                           <children>
+                              <RadioButton fx:id="radVisa" mnemonicParsing="false" onAction="#onClickRadVisa" text="Visa">
+                                 <graphic>
+                                    <ImageView fitHeight="26.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/visa-icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RadioButton>
+                              <RadioButton fx:id="radMastercard" mnemonicParsing="false" onAction="#onClickRadMastercard" text="Mastercard">
+                                 <graphic>
+                                    <ImageView fitHeight="28.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/masterCard-icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RadioButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children></VBox>
+      <VBox layoutX="508.0" layoutY="20.0" prefHeight="186.0" prefWidth="228.0" style="-fx-background-radius: 10;">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e5e5e5; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="27.0" layoutY="14.0" text="Your Order" textFill="#767373">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Line endX="34.60003662109375" endY="7.62939453125E-6" fill="#f4f1f1" layoutX="159.0" layoutY="53.0" startX="-130.00001525878906" startY="7.62939453125E-6" stroke="#f4f1f1" strokeWidth="3.0" />
+                  <Pane layoutX="30.0" layoutY="63.0" prefHeight="101.0" prefWidth="172.0" style="-fx-background-color: #D3B5F1; -fx-background-radius: 5;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Total amount" textFill="#404040">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTotalAmount" alignment="CENTER_RIGHT" layoutX="56.0" layoutY="66.0" prefHeight="27.0" prefWidth="108.0" text="RM 108.00" textFill="#767373" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="22.0" fitWidth="25.0" layoutX="140.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/checkout.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <VBox layoutX="508.0" layoutY="224.0" prefHeight="305.0" prefWidth="228.0" style="-fx-background-radius: 10;">
+         <children>
+            <Pane prefHeight="307.0" prefWidth="228.0" style="-fx-background-color: #e5e5e5; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="26.0" layoutY="12.0" text="Seats" textFill="#767373">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Line endX="36.39996337890625" fill="#f4f1f1" layoutX="158.0" layoutY="52.0" startX="-130.00001525878906" startY="7.62939453125E-6" stroke="#f4f1f1" strokeWidth="3.0" />
+                  <ScrollPane fx:id="sclSeat" hbarPolicy="NEVER" layoutX="25.0" layoutY="66.0" prefHeight="211.0" prefWidth="184.0" style="-fx-background-radius: 5;">
+                     <content>
+                        <VBox fx:id="vboxSeatContainer" alignment="TOP_CENTER" prefHeight="212.0" prefWidth="183.0" spacing="10.0" style="-fx-background-color: #D3B5F1; -fx-background-radius: 5;">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #8635D7; -fx-background-radius: 7.5;" text="C11A" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #8635D7; -fx-background-radius: 7.5;" text="C12A" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding></VBox>
+                     </content>
+                  </ScrollPane>
+                  <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="84.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/ticket.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</Pane>

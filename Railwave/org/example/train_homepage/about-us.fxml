@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aboutpane" prefHeight="550.0" prefWidth="750.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.train_homepage.About_Us">
+   <children>
+      <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+         <top>
+            <AnchorPane prefHeight="65.0" prefWidth="750.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutY="-4.0" prefHeight="25.0" prefWidth="138.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-4.0">
+                     <children>
+                        <Button fx:id="btnlogOut" layoutX="640.0" layoutY="12.0" maxHeight="30.0" mnemonicParsing="false" onAction="#btnLogOutClicked" prefHeight="30.0" prefWidth="93.0" styleClass="topNavItem" stylesheets="@style.css" text="Log Out">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../images/logOut.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <HBox layoutX="152.0" layoutY="-17.0" prefHeight="41.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="152.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                     <children>
+                        <Button maxHeight="30.0" mnemonicParsing="false" onAction="#switchHomePage" prefWidth="80.0" style="-fx-background-radius: 10px;" styleClass="topNavItem" stylesheets="@style.css" text="Home">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button maxHeight="30.0" mnemonicParsing="false" onAction="#switchTravel_Booking" prefWidth="80.0" style="-fx-background-radius: 10px;" styleClass="topNavItem" stylesheets="@style.css" text="Travel">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button maxHeight="30.0" mnemonicParsing="false" onAction="#showTicket" prefWidth="80.0" style="-fx-background-radius: 10px;" styleClass="topNavItem" stylesheets="@style.css" text="Ticket">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button maxHeight="30.0" mnemonicParsing="false" onAction="#showAboutUs" prefWidth="80.0" style="-fx-background-radius: 10px;" styleClass="topNavItem" stylesheets="@style.css" text="About Us">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button maxHeight="30.0" mnemonicParsing="false" onAction="#switchProfile" prefWidth="80.0" style="-fx-background-radius: 10px;" styleClass="topNavItem" stylesheets="@style.css" text="Profile">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="48.0" fitWidth="92.0" layoutX="25.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/RailWave_noWord.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="210.0" prefWidth="530.0" style="-fx-background-color: #8635D7; -fx-background-radius: 10px;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="454.0" prefWidth="712.0" style="-fx-background-radius: 20px;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="16.0" layoutY="115.0" prefHeight="302.0" prefWidth="698.0" text="Welcome to Railwave, where we aim to revolutionize your travel experience by seamlessly connecting you to destinations while prioritizing punctuality, efficiency, and comfort. Our state-of-the-art trains ensure precise and timely arrivals, while our focus on spacious seating, modern amenities, and a serene ambiance enhances your journey. With our user-friendly ticketing system, booking is effortless, and our dedicated support team ensures a hassle-free experience. We are committed to environmental responsibility, offering eco-friendly practices for a cleaner planet. Whether you're a daily commuter or occasional traveler, explore our express routes, indulge in Business Class luxury, or opt for tailored group packages. Trust Railwave to get you to your destination safely, comfortably, and on time, as we connect your world, one journey at a time." textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutY="14.0" prefHeight="108.0" prefWidth="730.0">
+                           <children>
+                              <Label layoutX="264.0" layoutY="14.0" prefHeight="58.0" prefWidth="243.0" text="ABOUT US" textAlignment="CENTER" textFill="WHITE" underline="true" wrapText="true">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="47.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
