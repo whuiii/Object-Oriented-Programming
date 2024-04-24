@@ -1,0 +1,8 @@
+RW_1,tess,C26C,Penang_Singapore,14:23,19.02,04h 39m,71
+RW_2,tess,C26D,Penang_Singapore,14:23,19.02,04h 39m,71
+RW_3,tess,C26B,Penang_Singapore,14:23,19.02,04h 39m,71
+RW_4,tess,C26A,Penang_Singapore,14:23,19.02,04h 39m,71
+RW_5,wh,C25D,Penang_Singapore,14:23,19.02,04h 39m,71
+RW_6,wh,C25C,Penang_Singapore,14:23,19.02,04h 39m,71
+RW_7,wh,C16D,Singapore_Penang,15:23,20.02,04h 39m,75
+RW_8,wh,C16C,Singapore_Penang,15:23,20.02,04h 39m,75

@@ -1,0 +1,36 @@
+Taiping_Penang,12:55,13:32,00h 37m,12
+Taiping_Penang,15:12,15:43,00h 31m,13
+Taiping_Penang,18:57,19:37,00h 40m,12
+Taiping_Singapore,13:30,17:32,04h 02m,62
+Taiping_Singapore,15:23,19:24,04h 01m,61
+Taiping_Singapore,17:42,21:47,04h 05m,62
+Taiping_Padang Besar,09:58,12:56,01h 58m,12
+Taiping_Padang Besar,14:08,16:11,02h 03m,13
+Taiping_Padang Besar,18:41,20:45,02 04m,12
+Penang_Singapore,08:30,13:07,04h 37m,72
+Penang_Singapore,14:23,19.02,04h 39m,71
+Penang_Singapore,16:42,21:21,04h 39m,72
+Penang_Padang Besar,09:58,11:13,01h 15m,26
+Penang_Padang Besar,11:39,12:51,01h 13m,25
+Penang_Padang Besar,16:41,17:49,01h 08m,26
+Penang_Taiping,14:55,15:32,00h 37m,12
+Penang_Taiping,18:12,18:43,00h 31m,13
+Penang_Taiping,21:57,22:37,00h 40m,12
+Padang Besar_Singapore,10:22,16:04,05h 42m,92
+Padang Besar_Singapore,13:47,19:38,05h 51m,93
+Padang Besar_Singapore,18:00,24:01,06h 01m,89
+Padang Besar_Penang,07:25,08:40,01h 15m,24
+Padang Besar_Penang,13:18,14:31,01h 13m,26
+Padang Besar_Penang,19:41,20:49,01h 08m,23
+Padang Besar_Taiping,10:34,12:32,01h 58m,34
+Padang Besar_Taiping,15:27,17:30,02h 03m,32
+Padang Besar_Taiping,19:55,21:59,02 04m,33
+Singapore_Penang,13:30,18:07,04h 37m,73
+Singapore_Penang,15:23,20.02,04h 39m,75
+Singapore_Penang,17:42,22:17,04h 35m,73
+Singapore_Taiping,13:30,17:32,04h 02m,63
+Singapore_Taiping,15:23,19:24,04h 01m,64
+Singapore_Taiping,17:42,21:47,04h 05m,63
+Singapore_Padang Besar,11:30,17:12,05h 42m,90
+Singapore_Padang Besar,14:23,20:14,05h 51m,92
+Singapore_Padang Besar,17:00,23:01,06h 01m,91
